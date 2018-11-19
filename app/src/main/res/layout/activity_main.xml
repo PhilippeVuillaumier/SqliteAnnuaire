@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView android:text="Annuaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/btSearch"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Chercher"
+            android:onClick="search"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ID :"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nom :"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tel :"/>
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btNew"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Vider"
+            android:onClick="clear"/>
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/supprimer"
+            android:onClick="delete"/>
+
+        <Button
+            android:id="@+id/btInsert"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:onClick="save"/>
+
+    </LinearLayout>
+
+</LinearLayout>
